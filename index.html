@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Verum — BF Engenharia</title>
+  <meta name="description" content="Verum, plataforma da BF Engenharia para acompanhar obras de SPE e de gerenciamento de obra. Acesso restrito a participantes e clientes convidados." />
+  <meta name="author" content="BF Engenharia" />
+  <meta name="theme-color" content="#00A676" />
+  <link rel="icon" href="https://verumengenharia.lovable.app/favicon-48.png" />
+  <link rel="apple-touch-icon" href="https://verumengenharia.lovable.app/apple-touch-icon.png" />
+  <meta property="og:title" content="Verum — BF Engenharia" />
+  <meta property="og:description" content="Plataforma da BF Engenharia para acompanhar obras de SPE e de gerenciamento de obra." />
+  <meta property="og:url" content="https://verum.eng.br" />
+  <meta property="og:type" content="website" />
+  <style>
+    :root { --fundo:#0f0f0f; --superficie:#1a1a1a; --borda:rgba(255,255,255,.1); --texto:#f2f2f2; --suave:#b3b3b3; --verde:#00a676; }
+    * { box-sizing: border-box; }
+    html, body { margin:0; background:var(--fundo); color:var(--texto);
+      font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; line-height:1.55; }
+    a { color:var(--verde); }
+    a:focus-visible, .botao:focus-visible { outline:2px solid var(--verde); outline-offset:2px; }
+    .serif { font-family: Georgia, "Times New Roman", serif; font-weight:400; letter-spacing:-.01em; }
+    .conteiner { max-width:960px; margin:0 auto; padding:0 20px; }
+    header { border-bottom:1px solid var(--borda); padding-top:env(safe-area-inset-top); }
+    header .conteiner { display:flex; align-items:center; justify-content:space-between; height:68px; }
+    .marca { display:flex; align-items:center; gap:10px; text-decoration:none; color:var(--texto); font-size:22px; }
+    .marca img { width:36px; height:36px; }
+    .botao { display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:12px 20px; border-radius:8px;
+      font-size:15px; font-weight:600; text-decoration:none; border:1px solid var(--verde); }
+    .botao.cheio { background:var(--verde); color:#0b0b0b; }
+    .botao.vazado { color:var(--verde); background:rgba(0,166,118,.1); }
+    .botao.pequeno { padding:8px 14px; font-size:14px; }
+    .heroi { padding-top:72px; padding-bottom:56px; }
+    .heroi h1 { font-size:clamp(34px, 6vw, 52px); line-height:1.1; margin:0; }
+    .heroi .sub { color:var(--verde); text-transform:uppercase; letter-spacing:.18em; font-size:12px; margin:14px 0 0; }
+    .heroi p.texto { color:var(--suave); font-size:18px; max-width:640px; margin:22px 0 0; }
+    .acoes { display:flex; flex-wrap:wrap; gap:12px; margin-top:30px; }
+    section { padding:40px 0; border-top:1px solid var(--borda); }
+    section h2 { font-size:28px; margin:0 0 20px; }
+    .cartoes { display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:16px; }
+    .cartao { background:var(--superficie); border:1px solid var(--borda); border-radius:10px; padding:22px; }
+    .cartao h3 { margin:0 0 8px; font-size:20px; }
+    .cartao p { margin:0; color:var(--suave); }
+    .aviso { color:var(--suave); font-size:15px; max-width:720px; }
+    footer { border-top:1px solid var(--borda); padding:32px 0 calc(32px + env(safe-area-inset-bottom)); color:var(--suave); font-size:14px; }
+    footer p { margin:4px 0; }
+    footer .links a { color:var(--suave); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="conteiner">
+      <a class="marca serif" href="/">
+        <img src="https://verumengenharia.lovable.app/verum-logo.png" alt="" width="36" height="36" />
+        Verum
+      </a>
+      <a class="botao vazado pequeno" href="https://verumengenharia.lovable.app/">Entrar</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="conteiner heroi">
+      <h1 class="serif">Verum</h1>
+      <p class="sub">O sistema operacional da incorporação</p>
+      <p class="texto">
+        Plataforma da BF Engenharia para acompanhar obras com transparência: avanço físico, cronograma, custos,
+        documentos e relatórios mensais, em um só lugar. O acesso é restrito a participantes e clientes convidados.
+      </p>
+      <div class="acoes">
+        <a class="botao cheio" href="https://verumengenharia.lovable.app/">Entrar no Verum</a>
+        <a class="botao vazado" href="https://verumengenharia.lovable.app/instalar">Instalar no celular</a>
+      </div>
+    </div>
+
+    <section aria-labelledby="t-servicos">
+      <div class="conteiner">
+        <h2 id="t-servicos" class="serif">O que a BF Engenharia faz</h2>
+        <div class="cartoes">
+          <div class="cartao">
+            <h3 class="serif">Obras em SPE</h3>
+            <p>Gestão técnica e financeira de empreendimentos estruturados em Sociedades de Propósito Específico,
+              com prestação de contas mensal aos participantes.</p>
+          </div>
+          <div class="cartao">
+            <h3 class="serif">Gerenciamento de obra</h3>
+            <p>Acompanhamento técnico da obra do cliente: orçamento, cronograma, diário de obra, controle de custos
+              e relatórios de avanço.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="t-acesso">
+      <div class="conteiner">
+        <h2 id="t-acesso" class="serif">Como acessar</h2>
+        <p class="aviso">
+          O Verum não tem cadastro aberto: cada acesso é criado pela BF Engenharia para quem participa de uma obra.
+          Com o seu convite em mãos, instale o Verum na tela inicial do celular ou entre pelo navegador.
+          A BF Engenharia não faz oferta pública de cotas.
+        </p>
+        <div class="acoes">
+          <a class="botao vazado" href="https://verumengenharia.lovable.app/instalar">Como instalar no celular</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="conteiner">
+      <p><strong>Borges de Figueiredo Engenharia Ltda</strong> (BF Engenharia) · CNPJ 49.492.688/0001-63</p>
+      <p>R. Clara Kuchenny, 252 – Abranches, Curitiba/PR – CEP 82130-390</p>
+      <p>Contato: <a href="mailto:engcivil.figueiredo@gmail.com">engcivil.figueiredo@gmail.com</a></p>
+      <p class="links">
+        <a href="https://verumengenharia.lovable.app/privacidade">Política de privacidade</a> ·
+        <a href="https://verumengenharia.lovable.app/termos">Termos de uso</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
