@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>Verum — BF Engenharia</title>
-  <meta name="description" content="Verum, plataforma da BF Engenharia para acompanhar obras de SPE e de gerenciamento de obra. Acesso restrito a participantes e clientes convidados." />
+  <title>BF Engenharia + Verum</title>
+  <meta name="description" content="BF Engenharia + Verum: a parte técnica da obra (projetos, gestão e acompanhamento) com a tecnologia do processo (sistema, conexão com o cliente e informação rápida)." />
   <meta name="author" content="BF Engenharia" />
   <meta name="theme-color" content="#00A676" />
   <link rel="icon" href="https://verumengenharia.lovable.app/favicon-48.png" />
   <link rel="apple-touch-icon" href="https://verumengenharia.lovable.app/apple-touch-icon.png" />
-  <meta property="og:title" content="Verum — BF Engenharia" />
-  <meta property="og:description" content="Plataforma da BF Engenharia para acompanhar obras de SPE e de gerenciamento de obra." />
+  <meta property="og:title" content="BF Engenharia + Verum" />
+  <meta property="og:description" content="Engenharia de obra e tecnologia, juntas." />
   <meta property="og:url" content="https://verum.eng.br" />
   <meta property="og:type" content="website" />
   <style>
@@ -46,6 +46,20 @@
     footer { border-top:1px solid var(--borda); padding:32px 0 calc(32px + env(safe-area-inset-bottom)); color:var(--suave); font-size:14px; }
     footer p { margin:4px 0; }
     footer .links a { color:var(--suave); }
+    .heroi h1 { max-width:720px; }
+    .heroi .sub { margin:0 0 16px; }
+    .rotulo { color:var(--verde); text-transform:uppercase; letter-spacing:.14em; font-size:11px; margin:0 0 6px; }
+    .cartao ul { margin:10px 0 0; padding-left:18px; color:var(--suave); }
+    .cartao li { margin:6px 0; }
+    .cartao.destaque { border-color:rgba(0,166,118,.45); background:linear-gradient(180deg, rgba(0,166,118,.08), var(--superficie)); }
+    .passos { list-style:none; padding:0; margin:0; display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:16px; }
+    .passos li { display:flex; gap:14px; align-items:flex-start; }
+    .passos .num { flex:0 0 32px; height:32px; border-radius:50%; border:1px solid var(--verde); color:var(--verde);
+      display:flex; align-items:center; justify-content:center; font-weight:600; }
+    .passos p { margin:4px 0 0; color:var(--suave); }
+    .lista { padding-left:20px; }
+    .lista li { margin:6px 0; }
+    @media (min-width: 700px) { .cartoes.quatro { grid-template-columns:repeat(2, 1fr); } }
   </style>
 </head>
 <body>
@@ -61,11 +75,12 @@
 
   <main>
     <div class="conteiner heroi">
-      <h1 class="serif">Verum</h1>
-      <p class="sub">O sistema operacional da incorporação</p>
+      <p class="sub">BF Engenharia + Verum</p>
+      <h1 class="serif">Engenharia de obra e tecnologia, juntas.</h1>
       <p class="texto">
-        Plataforma da BF Engenharia para acompanhar obras com transparência: avanço físico, cronograma, custos,
-        documentos e relatórios mensais, em um só lugar. O acesso é restrito a participantes e clientes convidados.
+        A BF Engenharia cuida da parte técnica: projetos, gestão e acompanhamento da obra.
+        O Verum é a tecnologia do processo: conecta a obra a quem participa dela, com informação rápida,
+        organizada e sempre à mão.
       </p>
       <div class="acoes">
         <a class="botao cheio" href="https://verumengenharia.lovable.app/">Entrar no Verum</a>
@@ -73,19 +88,70 @@
       </div>
     </div>
 
+    <section aria-labelledby="t-parceria">
+      <div class="conteiner">
+        <h2 id="t-parceria" class="serif">Quem faz o quê</h2>
+        <div class="cartoes">
+          <div class="cartao">
+            <p class="rotulo">A parte técnica</p>
+            <h3 class="serif">BF Engenharia</h3>
+            <ul>
+              <li>Projetos de engenharia, com coordenação e compatibilização</li>
+              <li>Orçamento e planejamento da obra</li>
+              <li>Gestão e acompanhamento técnico em campo</li>
+              <li>Diário de obra, fichas de verificação e controle de custos</li>
+              <li>Responsabilidade técnica pela execução</li>
+            </ul>
+          </div>
+          <div class="cartao destaque">
+            <p class="rotulo">A tecnologia do processo</p>
+            <h3 class="serif">Verum</h3>
+            <ul>
+              <li>Sistema que conecta a obra ao cliente e aos participantes</li>
+              <li>Avanço físico, cronograma e curva S atualizados</li>
+              <li>Documentos, relatórios mensais e prestação de contas no celular</li>
+              <li>Informação no mesmo dia, sem depender de planilhas e mensagens soltas</li>
+              <li>Acesso individual e seguro, cada um vê só o que é seu</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="t-como">
+      <div class="conteiner">
+        <h2 id="t-como" class="serif">Como funciona</h2>
+        <ol class="passos">
+          <li><span class="num">1</span><div><strong>A BF Engenharia planeja e executa</strong><p>Projeto, orçamento, cronograma e acompanhamento da obra.</p></div></li>
+          <li><span class="num">2</span><div><strong>O Verum registra e organiza</strong><p>Cada etapa, custo, documento e relatório entra no sistema.</p></div></li>
+          <li><span class="num">3</span><div><strong>Você acompanha pelo celular</strong><p>Com o seu acesso, vê o andamento da obra quando quiser.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
     <section aria-labelledby="t-servicos">
       <div class="conteiner">
-        <h2 id="t-servicos" class="serif">O que a BF Engenharia faz</h2>
-        <div class="cartoes">
+        <h2 id="t-servicos" class="serif">Onde atuamos</h2>
+        <div class="cartoes quatro">
           <div class="cartao">
             <h3 class="serif">Obras em SPE</h3>
             <p>Gestão técnica e financeira de empreendimentos estruturados em Sociedades de Propósito Específico,
               com prestação de contas mensal aos participantes.</p>
           </div>
           <div class="cartao">
-            <h3 class="serif">Gerenciamento de obra</h3>
+            <h3 class="serif">Execução de obra</h3>
+            <p>Execução da obra com responsabilidade técnica da BF Engenharia, do canteiro à entrega, com o andamento
+              registrado no Verum.</p>
+          </div>
+          <div class="cartao">
+            <h3 class="serif">Gestão de obra</h3>
             <p>Acompanhamento técnico da obra do cliente: orçamento, cronograma, diário de obra, controle de custos
               e relatórios de avanço.</p>
+          </div>
+          <div class="cartao">
+            <h3 class="serif">Coordenação de projetos</h3>
+            <p>Projetos de engenharia e coordenação entre as disciplinas, com compatibilização antes da obra para
+              evitar retrabalho no canteiro.</p>
           </div>
         </div>
       </div>
@@ -95,12 +161,16 @@
       <div class="conteiner">
         <h2 id="t-acesso" class="serif">Como acessar</h2>
         <p class="aviso">
-          O Verum não tem cadastro aberto: cada acesso é criado pela BF Engenharia para quem participa de uma obra.
-          Com o seu convite em mãos, instale o Verum na tela inicial do celular ou entre pelo navegador.
-          A BF Engenharia não faz oferta pública de cotas.
+          O acesso ao Verum é criado pela BF Engenharia para cada pessoa que participa de uma obra.
         </p>
+        <ul class="aviso lista">
+          <li><strong>Execução, gestão de obra e projetos:</strong> o cliente recebe o acesso ao contratar a BF Engenharia.</li>
+          <li><strong>Obras em SPE:</strong> a participação é só por convite. A BF Engenharia não faz oferta pública de cotas.</li>
+        </ul>
+        <p class="aviso">Com o acesso em mãos, instale o Verum na tela inicial do celular ou entre pelo navegador.</p>
         <div class="acoes">
           <a class="botao vazado" href="https://verumengenharia.lovable.app/instalar">Como instalar no celular</a>
+          <a class="botao vazado" href="mailto:engcivil.figueiredo@gmail.com?subject=Contato%20pelo%20site%20Verum">Fale com a BF Engenharia</a>
         </div>
       </div>
     </section>
